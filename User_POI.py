@@ -21,6 +21,7 @@ def preprocess_text(text):
 
 
 df["리뷰 내용"] = df["리뷰 내용"].apply(preprocess_text)
+
 # TF-IDF 벡터라이저 초기화
 tfidf_vectorizer = TfidfVectorizer(max_features=100)
 
